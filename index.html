@@ -6,28 +6,125 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+    }
+
+
+    article {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      margin: 150px auto;
+      max-width: 290px;
+      background-color: hsl(216, 50%, 16%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      border-radius: 10px;
+    }
+    
+    .nft {
+       max-width: 250px;  
+      border-radius: 10px;
+      margin-top: 18px;
+    }
+
+    .nft-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      align-self: flex-start;
+      margin-left: 20px;
+    }
+
+    .main-text {
+      margin-left: 20px;
+      /* margin-right: 5px; */
+      text-align:start;
+      font-size: 16px;
+      color:hsl(215, 51%, 70%);
+      font-weight: 300;
+    }
+
+    .checkout {
+      display: flex;
+      gap: 55px;
+      
+    }
+
+    .price {
+
+    }
+
+
+
+
+
+
   </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <article>
+
+    <img src="images/image-equilibrium.jpg" alt="NFT preview image" 
+    class="nft"/>
+
+
+
+    <a href="#" class="nft-link">
+      Equilibrium #3429
+    </a>
+  
+
+  <p class="main-text">
+  Our Equilibrium collection promotes balance and calm.
+  </p>
+
+<div class="checkout">
+  <p class="price">
+    <img src="images/icon-ethereum.svg" />
+  0.041 ETH
+  </a>
+ </p>
+ <p class="time">
+   <img src="images/icon-clock.svg" />
+   3 days left
+  </p>
+</div>
+
+<footer>
+  <p>
+  Creation of <a href="#">Jules Wyvern</a>
+</p>
+</footer>
+</article>
+
 </body>
 </html>
